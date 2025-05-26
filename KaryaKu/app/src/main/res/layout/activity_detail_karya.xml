@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivGambar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Karya"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi karya"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvTautan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tautan: https://github.com"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnLike"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_like"
+                android:contentDescription="Like"
+                android:layout_margin="8dp"
+                android:padding="6dp"/>
+
+            <ImageView
+                android:id="@+id/btnDislike"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_dislike"
+                android:contentDescription="Dislike"
+                android:layout_margin="8dp"
+                android:padding="6dp"/>
+
+            <ImageView
+                android:id="@+id/btnShare"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_share"
+                android:contentDescription="Share"
+                android:layout_margin="8dp"
+                android:padding="6dp"/>
+
+            <ImageView
+                android:id="@+id/btnEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_edit"
+                android:contentDescription="Edit"
+                android:layout_margin="8dp"
+                android:padding="6dp"/>
+
+            <ImageView
+                android:id="@+id/btnHapus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_delete"
+                android:contentDescription="Hapus"
+                android:layout_margin="8dp"
+                android:padding="6dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Komentar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etKomentar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tulis komentar..."
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <Button
+            android:id="@+id/btnKirimKomentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kirim"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/komentarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    </ScrollView>
